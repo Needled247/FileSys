@@ -1,0 +1,64 @@
+gtm_gg_state:光改情况表
+gtm_cat_type:光猫类型
+tbl_users:diway用户表1
+tbl_usersinfo：diway用户表2
+tbl_isplist:餐型
+tbl_distlist:地域
+GTM_MAINFORM_INFO:系统主表
+GTM_BUSINESS_INFO:营业厅
+GTM_CONTRACT:合同信息
+
+新建表：
+原网络性质:GTM_OLDNET_PROP
+用户性质:GTM_USER_PROP
+网络性质:GTM_NET_PROP
+
+GTM_MAINFORM_INFO主表添加字段：
+原网络性质：OLDNETPROP
+用户性质：USERPROP
+网络性质：NETPROP
+收款人：PAYEE
+接待人：ADMIT
+报装人电话：diway提取
+使用人电话：USERMOBILE
+固话：USERPHONE
+邮箱：USEREMAIL
+是否微信用户：WEIXIN
+========================
+mf_payee
+mf_admit
+mf_user_mobile
+mf_user_phone
+
+onp.onet_prop_value,up.user_prop_value,np.net_prop_value,
+gmf.oldnet_prop_id,gmf.user_prop_id,gmf.net_prop,
+
+mf_onet_prop
+mf_user_prop
+mf_net_prop
+mf_weixin
+----------------------------
+select gg.gg_name,gmf.redate,cat.cat_name,gmf.cxnote,gmf.hdnote,gmf.sbnote,gmf.zhnote,gmf.tsnote,gmf.isit,gmf.opt_usetime,bi.name,tu.susername,tui.srealname,ti.sispname,gmf.dfirstdate,tu.doverdate,tu.sfeephone,gmf.group_id,gmf.leaflet_no,tui.stele,tui.semail,gmf.house_type_id,gmf.line_type_id,gmf.save_admin,gmf.save_time,gc.contract_name
+select gg.gg_name,gmf.redate,cat.cat_name,gmf.cxnote,gmf.hdnote,gmf.sbnote,gmf.zhnote,gmf.tsnote,gmf.isit,gmf.opt_usetime,bi.name,gi.susername,tui.srealname,ti.sispname,gmf.dfirstdate,gi.doverdate,gi.sfeephone,gmf.group_id,gmf.leaflet_no,tui.stele,tui.semail,gmf.house_type_id,gmf.line_type_id,gmf.save_admin,gmf.save_time,gc.contract_name
+select gg.gg_name,gmf.redate,cat.cat_name,gmf.cxnote,gmf.hdnote,g
+
+mf.sbnote,gmf.zhnote,gmf.tsnote,gmf.isit,gmf.opt_usetime,bi.name,tu.susername,tui.srealname,ti.sispname,gmf.dfirstdate,tu.doverdate,tu.sfeephone,gmf.group_id,gmf.leaflet_no,tui.stele,tui.semail,gmf.house_type_id,gmf.line_type_id,gmf.save_admin,gmf.save_time,gc.contract_name,gmf.oldnet_prop_id,gmf.user_prop_id,gmf.net_prop,gmf.payee,gmf.admit,gmf.user_mobile,gmf.user_phone,gmf.weixin from gtm_net_prop np,gtm_oldnet_prop onp,gtm_user_prop up,gtm_gg_state gg,gtm_cat_type cat,tbl_users tu,tbl_usersinfo tui,tbl_isplist ti,tbl_distlist td,GTM_MAINFORM_INFO gmf,GTM_BUSINESS_INFO bi,gtm_contract gc where gmf.gg_id=gg.gg_id and gmf.cat_type_id=cat.cat_id and tu.susername=tui.susername and tu.susername=gmf.username and tu.iispid=ti.iispid and tu.idistid=td.idistid and gmf.contract_id=gc.contract_id and gmf.department_id=bi.id
+
+
+
+
+
+1、红头范围加在收文阅办单里。*  done
+2、收文阅办单不一定是4个。*  done
+3、分发登记表添加红头范围。*	done
+4、阅办情况查询 详细  出错。*	done
+5、添加按部门时间查询，部门为空的情况。*	done
+6、红头范围、发文范围用一个表*	done
+7、管理员能看见上传的附件  ----
+8、阅办情况中哪个用户看的。  done
+9、收文号根据文件类型自动生成。 ----
+10、范围 可为空。*  
+
+
+
+11、所有字段的表格。

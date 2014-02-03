@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.gjjt.pojo.gj_send_info">
+        <id name="ID" type="java.lang.Integer">
+            <generator class="identity"/>
+        </id>
+        <property name="SENDID" type="java.lang.Integer"/>
+        <property name="DEPARTMENT" type="java.lang.String"/>
+        <property name="TBL" type="java.lang.String"/>
+        <property name="ISCHECK" type="java.lang.String"/>
+        <property name="CHECKPERSON" type="java.lang.String"/>
+        <property name="ITIME" type="java.util.Date"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.gjjt.pojo.gj_file_plant">
+        <id name="ID" type="java.lang.Integer">
+            <generator class="identity"/>
+        </id>
+        <property name="XNUM1" type="java.lang.String"/>
+        <property name="XNUM2" type="java.lang.String"/>
+        <property name="TNUM1" type="java.lang.String"/>
+        <property name="TNUM2" type="java.lang.String"/>
+        <property name="TNUM3" type="java.lang.String"/>
+        <property name="CADDRESS" type="java.lang.String"/>
+        <property name="QUANTITY" type="java.lang.Integer"/>
+        <property name="FILENAME" type="java.lang.String"/>
+        <property name="FUNAME" type="java.lang.String"/>
+        <property name="FILETYPE" type="java.lang.String"/>
+        <property name="SNUM" type="java.lang.Integer"/>
+        <property name="CONTROLNUM" type="java.lang.String"/>
+        <property name="HANDOBJ" type="java.lang.String"/>
+        <property name="RPERSON" type="java.lang.String"/>
+        <property name="COPYRANGE" type="java.lang.String"/>
+        <property name="GRANTRANGE" type="java.lang.String"/>
+        <property name="COPYQUANTITY" type="java.lang.String"/>
+        <property name="ISINVALID" type="java.lang.String"/>
+        <property name="RECQUANTITY" type="java.lang.String"/>
+        <property name="CFILETYPE" type="java.lang.String"/>
+        <property name="RHQUANTITY" type="java.lang.Integer"/>
+        <property name="ATTURL" type="java.lang.String"/>
+        <property name="SENDTIME" type="java.lang.String"/>
+        <property name="TBL" type="java.lang.String"/>
+        <property name="STATUS" type="java.lang.String"/>
+        <property name="ITIME" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>

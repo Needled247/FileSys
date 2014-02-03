@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="struts2-2.3.15" type="struts2">
+    <properties version="2.3.15" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/struts2-core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/freemarker.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/xwork-core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ognl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-fileupload.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-io.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/asm.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/asm-commons.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/asm-tree.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javassist.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../BillSys/lib/commons-lang.jar!/" />
+      <root url="jar://E:/Coding/json-lib-2.4-jdk15及其依赖jar包/commons-collections-3.1.jar!/" />
+      <root url="jar://E:/Coding/json-lib-2.4-jdk15及其依赖jar包/json-lib-2.4-jdk15.jar!/" />
+      <root url="jar://E:/Coding/json-lib-2.4-jdk15及其依赖jar包/ezmorph-1.0.6.jar!/" />
+      <root url="jar://E:/Coding/json-lib-2.4-jdk15及其依赖jar包/commons-logging-1.1.1.jar!/" />
+      <root url="jar://E:/Coding/json-lib-2.4-jdk15及其依赖jar包/commons-lang-2.5.jar!/" />
+      <root url="jar://E:/Coding/json-lib-2.4-jdk15及其依赖jar包/commons-beanutils-1.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

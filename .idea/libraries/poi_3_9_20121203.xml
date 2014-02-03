@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="poi-3.9-20121203">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../BillSys/out/artifacts/BillSys_war_exploded/WEB-INF/lib/poi-3.9-20121203.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../BillSys/out/artifacts/BillSys_war_exploded/WEB-INF/lib/poi-examples-3.9-20121203.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../BillSys/out/artifacts/BillSys_war_exploded/WEB-INF/lib/poi-excelant-3.9-20121203.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../BillSys/out/artifacts/BillSys_war_exploded/WEB-INF/lib/poi-ooxml-3.9-20121203.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../BillSys/out/artifacts/BillSys_war_exploded/WEB-INF/lib/poi-ooxml-schemas-3.9-20121203.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../BillSys/out/artifacts/BillSys_war_exploded/WEB-INF/lib/poi-scratchpad-3.9-20121203.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

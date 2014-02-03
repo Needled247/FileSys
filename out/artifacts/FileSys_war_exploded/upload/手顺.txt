@@ -1,0 +1,27 @@
+**************************************************************
+*		BillSys
+*	语音计费管理系统
+**************************************************************
+SSH:git@github.com:Needled247/BillSys.git
+Http：https://github.com/Needled247/BillSys.git
+
+command：
+	C:\Users\HP\Desktop\BillSys
+	git remote add origin https://github.com/Needled247/BillSys.git
+	git push -u origin master
+	
+	C:\Users\HP\Desktop\test
+	git remote add origin https://github.com/Needled247/SpeedTest.git
+	git push -u origin master
+	
+	1)touch README.md文件是关于工程代码的介绍，类似与使用说明书
+
+	2)git init  初始化一个本地的 git仓库，生成隐藏的.git目录(隐藏的.git目录可使用ls -aF命令可以查看到)
+	
+	3)git add  README.md  把README.md文件添加到仓库中
+	
+	4)git commit -m "first commit"  执行提交说明，在Gitz中这个属于强制性的
+	
+	5)git remote add origin https://github.com/XFZLDXF/TEST.git   添加本地仓库origin和指定远程仓库地址
+	
+	6)git push origin master  推送本地仓库到远程指定的master分支上

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <description>springDemo1</description>
+    <!--data source-->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource">
+            <ref local="dataSource"/>
+        </property>
+    </bean>
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName">
+            <value>com.mysql.jdbc.Driver</value>
+        </property>
+        <property name="url">
+            <value>jdbc:mysql://localhost:3306/filesys</value>
+        </property>
+        <property name="username">
+            <value>root</value>
+        </property>
+        <property name="password">
+            <value>admin</value>
+        </property>
+    </bean>
+    <bean id="FileSysDao" class="com.gjjt.dao.FileSysDAOImpl">
+        <property name="jdbcTemplate">
+            <ref bean="jdbcTemplate"/>
+        </property>
+    </bean>
+    <bean id="gj_user" class="com.gjjt.pojo.gj_User">
+        <property name="dao">
+            <ref bean="FileSysDao"/>
+        </property>
+    </bean>
+    <bean id="caddress" class="com.gjjt.pojo.caddress">
+        <property name="dao">
+            <ref bean="FileSysDao"/>
+        </property>
+    </bean>
+    <bean id="copy_range" class="com.gjjt.pojo.copy_range">
+        <property name="dao">
+            <ref bean="FileSysDao"/>
+        </property>
+    </bean>
+    <bean id="ctype" class="com.gjjt.pojo.ctype">
+        <property name="dao">
+            <ref bean="FileSysDao"/>
+        </property>
+    </bean>
+    <bean id="file_type" class="com.gjjt.pojo.file_type">
+        <property name="dao">
+            <ref bean="FileSysDao"/>
+        </property>
+    </bean>
+    <bean id="gj_file_company" class="com.gjjt.pojo.gj_file_company">
+        <property name="dao">
+            <ref bean="FileSysDao"/>
+        </property>
+    </bean>
+    <bean id="gj_file_plant" class="com.gjjt.pojo.gj_file_plant">
+        <property name="dao">
+            <ref bean="FileSysDao"/>
+        </property>
+    </bean>
+    <bean id="gj_send_info" class="com.gjjt.pojo.gj_send_info">
+        <property name="dao">
+            <ref bean="FileSysDao"/>
+        </property>
+    </bean>
+    <bean id="grant_range" class="com.gjjt.pojo.grant_range">
+        <property name="dao">
+            <ref bean="FileSysDao"/>
+        </property>
+    </bean>
+    <bean id="tnum_fix_first" class="com.gjjt.pojo.tnum_fix_first">
+        <property name="dao">
+            <ref bean="FileSysDao"/>
+        </property>
+    </bean>
+    <bean id="xnum_fix" class="com.gjjt.pojo.xnum_fix">
+        <property name="dao">
+            <ref bean="FileSysDao"/>
+        </property>
+    </bean>
+</beans>

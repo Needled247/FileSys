@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost/fileSys?characterEncoding=gbk</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">admin</property>
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property>
+        <property name="hibernate.c3p0.timeout">1800</property>
+        <property name="hibernate.c3p0.max_statements">50</property>
+        <!-- 下面这句很重要，后面有解释 -->
+        <property name="hibernate.c3p0.testConnectionOnCheckout">true</property>
+        <!--配置数据表映射对象-->
+        <!--用户表Bean-->
+        <mapping resource="com/gjjt/pojo/gj_User.hbm.xml"/>
+        <mapping class="com.gjjt.pojo.gj_User"/>
+        <!--公司文件Bean-->
+        <mapping resource="com/gjjt/pojo/gj_file_company.hbm.xml"/>
+        <mapping class="com.gjjt.pojo.gj_file_company"/>
+        <!--厂文件Bean-->
+        <mapping resource="com/gjjt/pojo/gj_file_plant.hbm.xml"/>
+        <mapping class="com.gjjt.pojo.gj_file_plant"/>
+        <!--行政文号维护Bean-->
+        <mapping resource="com/gjjt/pojo/xnum_fix.hbm.xml"/>
+        <mapping class="com.gjjt.pojo.xnum_fix"/>
+        <!--体系文号维护Bean 字段1-->
+        <mapping resource="com/gjjt/pojo/tnum_fix_first.hbm.xml"/>
+        <mapping class="com.gjjt.pojo.tnum_fix_first"/>
+        <!--体系文号维护Bean 字段2-->
+        <mapping resource="com/gjjt/pojo/tnum_fix_second.hbm.xml"/>
+        <mapping class="com.gjjt.pojo.tnum_fix_second"/>
+        <!--来文单位维护Bean-->
+        <mapping resource="com/gjjt/pojo/caddress.hbm.xml"/>
+        <mapping class="com.gjjt.pojo.caddress"/>
+        <!--文件类型维护Bean-->
+        <mapping resource="com/gjjt/pojo/file_type.hbm.xml"/>
+        <mapping class="com.gjjt.pojo.file_type"/>
+        <!--发放范围（复印）Bean-->
+        <mapping resource="com/gjjt/pojo/copy_range.hbm.xml"/>
+        <mapping class="com.gjjt.pojo.copy_range"/>
+        <!--发放范围（红头）Bean-->
+        <mapping resource="com/gjjt/pojo/grant_range.hbm.xml"/>
+        <mapping class="com.gjjt.pojo.grant_range"/>
+        <!--来文类型Bean-->
+        <mapping resource="com/gjjt/pojo/ctype.hbm.xml"/>
+        <mapping class="com.gjjt.pojo.ctype"/>
+        <!--文件发送记录bean-->
+        <mapping resource="com/gjjt/pojo/gj_send_info.xml"/>
+        <mapping class="com.gjjt.pojo.gj_send_info"/>
+    </session-factory>
+</hibernate-configuration>

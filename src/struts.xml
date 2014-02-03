@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.i18n.encoding" value="GBK" />
+    <package name="struts2" extends="struts-default" namespace="/">
+            <action name="checkLogin" class="com.gjjt.action.checkLogin">
+            </action>
+            <action name="getPrefixAction" class="com.gjjt.action.getPrefixAction">
+            </action>
+            <action name="CreateFileAction" class="com.gjjt.action.CreateFileAction">
+                <result name="success" type="redirect">index.jsp</result>
+                <result name="error" type="redirect">login.jsp</result>
+            </action>
+            <action name="CreatePFileAction" class="com.gjjt.action.CreatePFileAction">
+                <result name="success" type="redirect">EntryPage/index.jsp</result>
+                <result name="error" type="redirect">login.jsp</result>
+            </action>
+            <action name="CreateCompFileAction" class="com.gjjt.action.CreateCompFileAction">
+                <result name="success" type="redirect">index.jsp</result>
+                <result name="error" type="redirect">login.jsp</result>
+            </action>
+            <action name="CreateCFileAction" class="com.gjjt.action.CreateCFileAction">
+                <result name="success" type="redirect">EntryPage/index.jsp</result>
+                <result name="error" type="redirect">login.jsp</result>
+            </action>
+            <action name="ReleasedAction" class="com.gjjt.action.ReleasedAction">
+            </action>
+            <action name="SearchFileAction" class="com.gjjt.action.SearchFileAction">
+            </action>
+            <action name="EditFileAction" class="com.gjjt.action.EditFileAction">
+            </action>
+            <action name="GenerateAction" class="com.gjjt.action.GenerateAction">
+            </action>
+            <action name="GenerateReceiptAction" class="com.gjjt.action.GenerateReceiptAction">
+            </action>
+            <action name="AddUserAction" class="com.gjjt.action.AddUserAction">
+            </action>
+            <action name="UserManageAction" class="com.gjjt.action.UserManageAction">
+            </action>
+            <action name="UserInitAction" class="com.gjjt.action.UserInitAction">
+            </action>
+            <action name="ChangePassAction" class="com.gjjt.action.ChangePassAction">
+            </action>
+            <action name="EntryEditFileAction" class="com.gjjt.action.EntryEditFileAction">
+            </action>
+            <action name="SituationAction" class="com.gjjt.action.SituationAction">
+            </action>
+            <action name="SituationInitAction" class="com.gjjt.action.SituationInitAction">
+            </action>
+            <action name="DelUserAction" class="com.gjjt.action.DelUserAction">
+            </action>
+            <action name="SettingAction" class="com.gjjt.action.SettingAction">
+            </action>
+            <action name="SnumAction" class="com.gjjt.action.SnumAction">
+            </action>
+            <action name="AllFileAction" class="com.gjjt.action.AllFileAction">
+            </action>
+    </package>
+</struts>

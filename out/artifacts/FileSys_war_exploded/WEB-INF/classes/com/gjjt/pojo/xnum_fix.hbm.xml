@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.gjjt.pojo.xnum_fix">
+        <id name="ID" type="java.lang.Integer">
+            <generator class="identity"/>
+        </id>
+        <property name="KEY" type="java.lang.String"/>
+        <property name="VALUE" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>
